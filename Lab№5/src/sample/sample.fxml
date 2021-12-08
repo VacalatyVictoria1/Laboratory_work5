@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="600" maxWidth="300" minHeight="600" minWidth="300" prefHeight="300.0" prefWidth="600.0" style="-fx-background-color: F8F8F8;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane prefHeight="55.0" prefWidth="600.0" style="-fx-background-color: F2EA1D;">
+         <children>
+            <Button fx:id="read" layoutX="49.0" layoutY="15.0" mnemonicParsing="false" onAction="#read" prefHeight="26.0" prefWidth="106.0" text="Read Out " textAlignment="CENTER" />
+            <Button fx:id="display" layoutX="185.0" layoutY="15.0" mnemonicParsing="false" onAction="#display" prefHeight="26.0" prefWidth="106.0" text="Display " />
+            <Button fx:id="sort" layoutX="317.0" layoutY="15.0" mnemonicParsing="false" onAction="#sort" prefHeight="26.0" prefWidth="106.0" text="Sort" />
+            <Button fx:id="remove" layoutX="449.0" layoutY="15.0" mnemonicParsing="false" onAction="#remove" prefHeight="26.0" prefWidth="106.0" text="Rеmove" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="table" layoutY="55.0" prefHeight="246.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="43.20001220703125" text="ID" />
+          <TableColumn fx:id="type" minWidth="0.0" prefWidth="124.79998779296875" text="Type" />
+            <TableColumn fx:id="setup" prefWidth="279.20001220703125" text="Joke" />
+            <TableColumn fx:id="punchline" prefWidth="152.0" text="Punchline" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
